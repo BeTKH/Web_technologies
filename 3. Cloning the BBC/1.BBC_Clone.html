@@ -14,6 +14,8 @@
 		}
 
 		#top-bar{
+
+
 			color: white;
 			background-color: white;
 			width: 1000px;
@@ -69,7 +71,7 @@
 		#bell{
 
 			height: 22px;
-			margin: 9px 8px;
+			margin: 9px 8px 0 8px;
 		}
 
 		#bell-div{
@@ -108,6 +110,187 @@
 			
 			
 		}
+
+		.clear{
+			clear: both;
+		}
+
+		#menu-bar-container{
+
+
+			background-color: #bb1919;
+			height: 70px;
+			width: 100%
+
+
+		}
+
+		#menu-bar{
+			
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		h1{
+			padding: 0;
+			margin: 0;
+			color: white;
+			font-size: 40px;
+			font-weight: normal;
+			padding-top: 10px;
+			padding-left: 5px;
+			float: left;
+		}
+
+		#local-news{
+
+			
+			border:1px #BB4545 solid;
+			float: right;
+			width: 180px;
+			position: absolute;
+			right: 190px;
+			padding: 5px 5px 5px 5px;
+			margin: 25px 10px 8px 7px;
+
+		}
+
+		#local-news a {
+
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+			position: relative;
+			top:5px 3px 5px 0px;
+		}
+
+		#local-news a:hover{
+
+			text-decoration: underline;
+		}
+
+		#bottom-menu-bar-container{
+
+			background-color: #A91717;
+			height: 30px;
+			width: 100%;
+			border-top:0.5px #CCCCCC solid;
+		}
+
+		#bottom-menu-bar-inner-div{
+
+			background-color: #A91717;
+			width: 1000px;
+			height: 30px;
+			margin: 0 auto;
+		}
+
+
+		#bottom-bar-inner-div-text a{
+
+			color: white;
+			text-decoration: none;
+			font-size: 80%;
+			font-family: ReithSans,Arial,Helvetica,freesans,sans-serif; 
+			padding: 0px 20px 0px 18px;
+			border-right: 1px #CCCCCC solid;
+			position: relative;
+			top: 6px;
+			float: left;
+		}
+
+		#bottom-bar-inner-div-text a:hover{
+			text-decoration: underline;
+		}
+
+		.space{
+			margin-right: 10px;
+		}
+
+		.noborder{
+
+			border:none !important;
+		}
+
+		#important{
+
+			height: 16px;
+			position: relative;
+			top:5px;
+			margin-left: 5px;
+
+		}
+
+		#content-menu{
+
+			background-color: white;
+			width: 1000px;
+			height: 40px;
+			margin: 0 auto;
+
+		}
+
+		#content-menu-topic{
+			color: black;
+			height: 20px;
+			float: left;
+			margin: 5px;
+			position: relative;
+			top: -20px;
+		}
+
+		h2{
+			border-bottom: 4px solid #A91717;
+			margin-top: 20px;
+			font-size: 18px;
+		}
+
+
+		#content-header-container{
+
+			background-color: white;
+			width: 1000px;
+			height: 300px;
+			margin: 0 auto;
+
+		}
+
+		#content-header-container h1 {
+			color: black;
+			float:left;
+		}
+
+		#content-header-left {
+			background-color: green;
+			margin: 0 auto;
+			width: 600px;
+			height: 300px;
+			padding: 0;
+			float:left;
+
+		}
+
+		#content-header-right {
+			background-color: green;
+			border-top: 4px solid #A91717;
+			margin: 0 auto;
+			width: 400px;
+			height: 300px;
+			padding: 0;
+			float: left;
+
+		}
+
+		#top-stories-head{
+
+			font-size: 30px;
+			font-weight: normal;
+			float: right;
+			padding: 0px 5px 0px 0px;
+
+		}
+
+		
 
 	</style>
 </head>
@@ -153,9 +336,89 @@
 				<input type="image"  id="mag-glass" src="img/mag.jpg">
 
 			</div>
+	</div>
 
+	<div class="clear"></div>
 
+	<div id="menu-bar-container">
+		
+		<div id="menu-bar">
+			
+			<h1>NEWS</h1>
+
+			<div id="local-news"> <a href="">Find local news</a></div>
+
+		</div>
 
 	</div>
+
+	<div class="clear"></div>
+
+	<div id="bottom-menu-bar-container">
+		
+		<div id="bottom-menu-bar-inner-div">
+			
+			<div id="bottom-bar-inner-div-text"><a href="">Home</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Coronavirus</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Video</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">World</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">UK</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Business</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Tech</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Stories</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Entertainment & Arts</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a  href="">Health</a></div>
+
+
+			<div id="bottom-bar-inner-div-text"><a href="" class="noborder">More</a>
+
+				<input type="image" id="important" src="img/imp.jpg">
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div id="content-menu">
+		
+		<div id="content-menu-topic">
+
+			<h2>Tech</h2>
+
+		</div>
+
+	</div>
+
+	<div class="clear"></div>
+
+
+	<div id="content-header-container">
+		
+		<div id="content-header-left">
+				
+			<h1>Google and Apple attacked on app store 'monopoly'</h1>
+		</div>
+			
+			
+		<div id="#content-header-right">
+				
+			<p  id="top-stories-head">Top Stories</p>
+
+		</div>
+
+	</div>
+
 </body>
 </html>
