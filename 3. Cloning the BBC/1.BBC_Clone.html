@@ -14,6 +14,8 @@
 		}
 
 		#top-bar{
+
+
 			color: white;
 			background-color: white;
 			width: 1000px;
@@ -69,7 +71,7 @@
 		#bell{
 
 			height: 22px;
-			margin: 9px 8px;
+			margin: 9px 8px 0 8px;
 		}
 
 		#bell-div{
@@ -108,6 +110,256 @@
 			
 			
 		}
+
+		.clear{
+			clear: both;
+		}
+
+		#menu-bar-container{
+
+
+			background-color: #bb1919;
+			height: 70px;
+			width: 100%
+
+
+		}
+
+		#menu-bar{
+			
+			width: 1000px;
+			margin: 0 auto;
+		}
+
+		h1{
+			padding: 0;
+			margin: 0;
+			color: white;
+			font-size: 40px;
+			font-weight: normal;
+			padding-top: 10px;
+			padding-left: 5px;
+			float: left;
+		}
+
+		#local-news{
+
+			
+			border:1px #BB4545 solid;
+			float: right;
+			width: 180px;
+			position: absolute;
+			right: 190px;
+			padding: 5px 5px 5px 5px;
+			margin: 25px 10px 8px 7px;
+
+		}
+
+		#local-news a {
+
+			color: white;
+			text-decoration: none;
+			font-size: 20px;
+			position: relative;
+			top:5px 3px 5px 0px;
+		}
+
+		#local-news a:hover{
+
+			text-decoration: underline;
+		}
+
+		#bottom-menu-bar-container{
+
+			background-color: #A91717;
+			height: 30px;
+			width: 100%;
+			border-top:0.5px #CCCCCC solid;
+		}
+
+		#bottom-menu-bar-inner-div{
+
+			background-color: #A91717;
+			width: 1000px;
+			height: 30px;
+			margin: 0 auto;
+		}
+
+
+		#bottom-bar-inner-div-text a{
+
+			color: white;
+			text-decoration: none;
+			font-size: 80%;
+			font-family: ReithSans,Arial,Helvetica,freesans,sans-serif; 
+			padding: 0px 20px 0px 18px;
+			border-right: 1px #CCCCCC solid;
+			position: relative;
+			top: 6px;
+			float: left;
+		}
+
+		#bottom-bar-inner-div-text a:hover{
+			text-decoration: underline;
+		}
+
+		.space{
+			margin-right: 10px;
+		}
+
+		.noborder{
+
+			border:none !important;
+		}
+
+		#important{
+
+			height: 16px;
+			position: relative;
+			top:5px;
+			margin-left: 5px;
+
+		}
+
+		#content-menu{
+
+			background-color: white;
+			width: 1000px;
+			height: 40px;
+			margin: 0 auto;
+
+		}
+
+		#content-menu-topic{
+			color: black;
+			height: 20px;
+			float: left;
+			margin: 5px;
+			position: relative;
+			top: -20px;
+		}
+
+		h2{
+			border-bottom: 4px solid #A91717;
+			margin-top: 20px;
+			font-size: 18px;
+		}
+
+
+		#content-header-container{
+
+			background-color: white;
+			width: 1000px;
+			height: 300px;
+			margin: 0 auto;
+
+		}
+
+		#content-header-container h1 {
+			color: black;
+			float:left;
+		}
+
+		#content-header-left {
+			background-color: white;
+			margin: 0 auto;
+			width: 750px;
+			height: 300px;
+			padding: 0;
+			float:left;
+
+		}
+
+		#content-header-right {
+
+			position: relative;
+			right: -100px;
+
+			border-top: 2px solid #A91717;
+			border-bottom: 2px solid #A91717;
+			background-color: white;
+			padding: 0;
+			margin: 0 auto;
+			width: 250px;
+			height: 400px;
+			padding: 0;
+			float: left;
+
+		}
+
+
+		#news-headline{
+			position: relative;
+			margin: 5px 0px 0px 0px;
+			font-weight: bold;
+			font-size: 250%;
+		}
+
+		#author{
+
+			position: relative;
+			font-weight: bold;
+			top: 20px;
+			margin: 20px 0px 0px 0px;
+
+		}
+
+		#authors-role{
+			color: grey;
+			position: relative;
+			font-weight: bold;
+			top: 5px;
+			margin: 20px 0px 0px 0px;
+		}
+
+
+		#time-logo{
+
+			margin: 0 0 0 5px;
+			height: 15px;
+
+		}
+
+		#posting-time{
+
+			position: relative;
+			top: 5px;
+			color: grey;
+		}
+
+		#share-icon{
+			position: relative;
+			height: 25px;
+			left: 5px;
+			top: 5px;
+		}
+
+
+
+		#top-stories-header{
+			font-weight: bold;
+			font-size: 150%;
+
+		}
+
+
+		.stories-header{
+
+			font-size: 120%;
+
+		}
+
+		.stories-header a {
+
+			text-decoration: none;
+			color: grey;
+		}
+
+		.stories-header a:hover {
+
+			text-decoration: underline;
+		}
+
 
 	</style>
 </head>
@@ -153,9 +405,125 @@
 				<input type="image"  id="mag-glass" src="img/mag.jpg">
 
 			</div>
+	</div>
 
+	<div class="clear"></div>
 
+	<div id="menu-bar-container">
+		
+		<div id="menu-bar">
+			
+			<h1>NEWS</h1>
+
+			<div id="local-news"> <a href="">Find local news</a></div>
+
+		</div>
 
 	</div>
+
+	<div class="clear"></div>
+
+	<div id="bottom-menu-bar-container">
+		
+		<div id="bottom-menu-bar-inner-div">
+			
+			<div id="bottom-bar-inner-div-text"><a href="">Home</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Coronavirus</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Video</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">World</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">UK</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Business</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Tech</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Stories</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a href="">Entertainment & Arts</a></div>
+
+			<div id="bottom-bar-inner-div-text"><a  href="">Health</a></div>
+
+
+			<div id="bottom-bar-inner-div-text"><a href="" class="noborder">More</a>
+
+				<input type="image" id="important" src="img/imp.jpg">
+
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="clear"></div>
+
+	<div id="content-menu">
+		
+		<div id="content-menu-topic">
+
+			<h2>Tech</h2>
+
+		</div>
+
+	</div>
+
+	<div class="clear"></div>
+
+
+	<div id="content-header-container">
+		
+		<div id="content-header-left">
+				
+			<p id="news-headline">Google and Apple attacked on app store 'monopoly'</p>
+
+			<p id="author">By James Clayton</p>
+
+			<p id="authors-role">North America technology reporter</p>
+
+			<p id="posting-time"><img id="time-logo" src="img/tlogo.JPG"> 15 hours ago <input type="image" id="share-icon" src="img/share.JPG"></p>
+
+			<hr>
+
+			<p><img src="img/pep.JPG"></p>
+
+			<p><b> Senators have grilled Apple and Google in Washington over "anti-competitive" behaviour related to their app stores.</b></p>
+
+			<p>Representatives from Tile, Spotify and Match also gave evidence, accusing the two tech firms of charging exorbitant fees and copying their ideas.</p>
+
+			<p>Both Apple and Google's app stores charge fees of up to 30% for in-app purchases.</p>
+
+			<p>The two companies said the fees were justified to provide security for users.</p>
+
+			<p>The Senate Judiciary Committee's antitrust panel focussed on claims that Apple's App Store and Google's Google Play are anti-competitive</p>
+
+			<p>Senator Amy Klobuchar said that Apple's App Store was a "literal monopoly".</p>
+
+		</div>
+			
+			
+		<div id="content-header-right">
+			
+			<p id="top-stories-header">Top Stories</p>
+
+			<p class="stories-header"><a href=""><Delhi hospitals run out of oxygen amid Covid spike</a></p>
+
+			<p id="posting-time"><img id="time-logo" src="img/tlogo.JPG"> 1 hours ago </p>
+
+			<p class="stories-header" class="stories-header"><a href="">Biden: 'Decisive decade' to tackle climate change</a></p>
+
+			<p id="posting-time"><img id="time-logo" src="img/tlogo.JPG"> 5 hours ago </p>
+
+			<p class="stories-header" class="stories-header"><a href="">Juror in the Derek Chuavin trial speaks out</a></p>
+
+			<p id="posting-time"><img id="time-logo" src="img/tlogo.JPG"> 5 hours ago </p>
+
+		</div>		
+		
+
+	</div>
+
 </body>
 </html>
