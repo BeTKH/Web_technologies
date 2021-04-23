@@ -38,7 +38,7 @@
 			height: 20px;
 			width: 250px;
 			top: 20px;
-			right: 30px;
+			right: 0px;
 			border: 1px solid grey;
 			float: right;
 		}
@@ -47,11 +47,11 @@
 
 			position: relative;
 			top: 22px;
-			right: -220px;
+			right: -750px;
 			height: 20px;
 			background: none;
 			background-color: #C37500;
-			float: right;
+			float: left;
 
 		}
 
@@ -69,20 +69,70 @@
 
 		#menu-bar{
 
+			margin: 0 auto;
 			height: 65px;
 			width: 1000px;
-			margin: 0 auto;
 			background-color: #0098FF;
 		}
 
-		#sub-menu-bar{
 
-			border-top: 1px solid grey;
+		#header-text{
+
+			color: white;
+			margin: 25px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-weight: bold;
+			font-size: 140%;
+			text-decoration: none;
+			float: left;
+			
+		}
+
+		
+		#header-text a{
+
+			text-decoration: none;
+			color: white;
+		}
+
+		#header-text a:hover{
+
+			text-decoration: none;
+			color: black;
+		}
+
+		#sub-menu-bar{
+			border-top: 2px solid white;
+			margin: 0 auto;
 			height: 40px;
 			width: 1000px;
-			margin: 0 auto;
 			background-color: #0098FF;
+	
+		}
 
+
+		#menu-bar-text{
+			
+			color: white;
+			margin: 5px;
+			font-family: sans-serif;
+			font-weight: bold;
+			font-size: 100%;
+			text-decoration: none;
+			float: left;
+		}
+
+		
+		#menu-bar-text a{
+
+			text-decoration: none;
+			color: white;
+		}
+
+		#menu-bar-text a:hover{
+
+			text-decoration: none;
+			color: black;
 		}
 
 	</style>
@@ -106,9 +156,33 @@
 
 		<div id="clear-floats"></div>
 
-		<div id="menu-bar"></div>
+		<div id="menu-bar">
+			
+			<h2 id="header-text"><a href="">TOP STORIES</a></h2>
 
-		<div id="sub-menu-bar"></div>
+			<h2 id="header-text"><a href="">MEDIA CENTER</a></h2>
+
+			<h2 id="header-text"><a href="">TV</a></h2>
+
+			<h2 id="header-text"><a href="">RADIO</a></h2>
+
+			<h2 id="header-text"><a href="">LEARN GERMAN</a></h2>
+
+		</div>
+
+		<div id="clear-floats"></div>
+
+		<div id="sub-menu-bar">
+			
+			<h3 id="menu-bar-text"><a href="">GERMANY</a></h3>
+
+			<h3 id="menu-bar-text"><a href="">GERMANY</a></h3>
+
+			<h3 id="menu-bar-text"><a href="">GERMANY</a></h3>
+
+			
+
+		</div>
 
 	</div>
 
