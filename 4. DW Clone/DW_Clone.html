@@ -76,10 +76,10 @@
 		}
 
 
-		#header-text{
+		.menu-bar-text{
 
 			color: white;
-			margin: 25px;
+			margin: 20px 25px 0px 22px;
 			font-family: Arial, Helvetica, sans-serif;
 			font-weight: bold;
 			font-size: 140%;
@@ -89,51 +89,107 @@
 		}
 
 		
-		#header-text a{
+		.menu-bar-text a{
 
 			text-decoration: none;
 			color: white;
 		}
 
-		#header-text a:hover{
+		.menu-bar-text a:hover{
 
 			text-decoration: none;
 			color: black;
 		}
 
 		#sub-menu-bar{
-			border-top: 2px solid white;
+			border-top: 1px solid white;
 			margin: 0 auto;
 			height: 40px;
 			width: 1000px;
 			background-color: #0098FF;
+
 	
 		}
 
+		.sub-menu-bar-text a{
 
-		#menu-bar-text{
-			
-			color: white;
-			margin: 5px;
-			font-family: sans-serif;
-			font-weight: bold;
-			font-size: 100%;
+			margin: 2px 5px 0px 22px;
+			font-size: 105%;
 			text-decoration: none;
+			color: #99CCFF;
+			font-family: Arial, Helvetica, sans-serif;
+			float: left;
+;
+		}
+
+		.sub-menu-bar-text a:hover{
+
+			text-decoration: none;
+			color: white;
+		}
+
+		#sports-tab-color{
+
+			color: white;
+		}
+
+		#current-section-bar {
+
+			
+		
+			height: 30px;
+			width: 1000px;
+			margin: 0 auto;
+			color: white;
+			background-color: white;
+			
+
+		}
+
+		#current-section-text{
+			color: grey;
+			float: left;
+			margin: 10px 2px 0px 22px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		#top-content-container{
+
+			height: 400px;
+			width: 1000px;
+			margin: 0 auto;
+			background-color: white;
+		}
+
+		#top-content-container-right{
+
+
+			border-top: 2px solid grey;
+			height: 400px;
+			width: 700px;
+			margin: 20px 100px 0px 0px;
+			background-color: white;
 			float: left;
 		}
 
+		#top-content-container-left{
+
+			height: 400px;
+			width: 200px;
+			background-color: red;
+			margin-top: 20px;
+			float: left;
+		}
+
+		#talking-points{
+
+			color: grey;
+			font-family: Arial, Helvetica, sans-serif;
+
+		}
+
+
 		
-		#menu-bar-text a{
-
-			text-decoration: none;
-			color: white;
-		}
-
-		#menu-bar-text a:hover{
-
-			text-decoration: none;
-			color: black;
-		}
 
 	</style>
 
@@ -158,15 +214,15 @@
 
 		<div id="menu-bar">
 			
-			<h2 id="header-text"><a href="">TOP STORIES</a></h2>
+			<h2 class="menu-bar-text"><a href="">TOP STORIES</a></h2>
 
-			<h2 id="header-text"><a href="">MEDIA CENTER</a></h2>
+			<h2 class="menu-bar-text"><a href="">MEDIA CENTER</a></h2>
 
-			<h2 id="header-text"><a href="">TV</a></h2>
+			<h2 class="menu-bar-text"><a href="">TV</a></h2>
 
-			<h2 id="header-text"><a href="">RADIO</a></h2>
+			<h2 class="menu-bar-text"><a href="">RADIO</a></h2>
 
-			<h2 id="header-text"><a href="">LEARN GERMAN</a></h2>
+			<h2 class="menu-bar-text"><a href="">LEARN GERMAN</a></h2>
 
 		</div>
 
@@ -174,15 +230,42 @@
 
 		<div id="sub-menu-bar">
 			
-			<h3 id="menu-bar-text"><a href="">GERMANY</a></h3>
+			<p class="sub-menu-bar-text"><a href="">GERMANY</a></p>
 
-			<h3 id="menu-bar-text"><a href="">GERMANY</a></h3>
+			<p class="sub-menu-bar-text"><a href="">CORONAVIRUS</a></p>
 
-			<h3 id="menu-bar-text"><a href="">GERMANY</a></h3>
+			<p class="sub-menu-bar-text"><a href="">WORLD</a></p>
 
-			
+			<p class="sub-menu-bar-text"><a href="">BUSINESS</a></p>
+
+			<p class="sub-menu-bar-text"><a href="">SCIENCE</a></p>
+
+			<p class="sub-menu-bar-text"><a href="">ENVIRONMENT</a></p>
+
+			<p class="sub-menu-bar-text"><a href="">CULTURE</a></p>
+
+			<p class="sub-menu-bar-text"><a href=""><span id="sports-tab-color">SPORTS</span></a></p>
 
 		</div>
+
+		<div id="clear-floats"></div>
+
+		<div id="current-section-bar" ><p id="current-section-text">TOP STORIES / SPORTS</p></div>
+
+		<div id="clear-floats"></div>
+
+		<div id="top-content-container">
+			
+			<div id="top-content-container-right">
+				
+				<div id="talking-points">TALKING POINTS</div>
+
+			</div>
+
+			<div id="top-content-container-left"></div>
+
+		</div>
+		
 
 	</div>
 
