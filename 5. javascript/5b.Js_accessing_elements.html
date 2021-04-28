@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js-accessing elements</title>
+</head>
+<body>
+	<h2>Changing the text when button is clicked</h2>
+	<hr>
+
+	
+
+	<p id="text">Hello world!</p>
+
+	<button id="my-button">Change text</button>
+
+
+	<p id="second-p">Javascript is ...</p>
+
+	<button id="my-button-2">Append Text</button>
+
+	<p id="third-p">Javascript is ...</p>
+	<button id="my-button-3">Append Text</button>
+
+
+
+
+
+	<h3>make text appear out of no where</h3>
+	<hr>
+
+	<p id="empty-p"></p>
+	<button id="create-text">Create text</button>
+
+
+
+
+
+	<h3>Add style to a text when button clicked</h3>
+	<hr>
+
+
+	<p id="moreText">This text needs some style!</p>
+	<button id="Style-text">Style text</button>
+
+
+	<h3>Make this text disappear</h3>
+	<hr>
+
+
+	<h1 id="disappearingtext">This text needs to disappear</h1>
+	<button id="text-remove">Disappear text</button>
+
+	<script type="text/javascript" charset="utf-8">
+
+		// when the button is clicked ,ake the function call
+
+		document.getElementById("my-button").onclick = function(){
+
+			// define a function
+
+			alert("Button clicked!");
+
+			document.getElementById("text").innerHTML = "Hello Fellasssssssssssssssssssssssssssss";
+
+		}
+
+		document.getElementById("my-button-2").onclick = function(){
+
+			// define a function
+
+			document.getElementById("second-p").innerHTML = "Javascript is COOOOOOOOOOOOL";
+
+		}
+
+
+		// here's another way to append text 
+
+		document.getElementById("my-button-3").onclick = function(){
+
+			// define a function
+
+			document.getElementById("third-p").innerHTML = "I think "+document.getElementById("third-p").innerHTML  + "AWESOME!";
+
+		}
+
+
+		// make text appear out of no where
+
+		document.getElementById("create-text").onclick = function(){
+
+			// define a function
+
+			document.getElementById("empty-p").innerHTML =  "<h1>Created this text</h1>";
+
+		}
+
+		// Add style to a text
+
+		document.getElementById("Style-text").onclick = function(){
+
+			// define a function
+
+			document.getElementById("moreText").style.color = 'red';
+			document.getElementById("moreText").style.fontSize = '50px';
+				
+
+		}
+
+		document.getElementById("text-remove").onclick = function(){
+
+			// define a function
+
+			document.getElementById("disappearingtext").style.display= 'none';
+		
+				
+
+		}
+
+		
+	</script>
+
+</body>
+</html>
