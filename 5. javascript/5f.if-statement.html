@@ -14,11 +14,60 @@
 	}
 	</p>
 
-	<script type="text/javascript">
-		
-		var x =1;
+	<h2>Mini challenge-1</h2>
+	<hr>
+	<p>Ask a user to enter a secret magic code and compare it using if statement and show if a user gussed it right or wrong</p>
+	<input id="input-text" type="text" placeholder="what's the magic word?">
+	<button id="submit-button">submit</button>
 
-		alert(x)
+
+
+	<h2>Mini challenge-2</h2>
+	<hr>
+	<p>A user saved a secret name that he will have to enter whenever he wants to change his password.
+		If he remebers the name, tell him that's he's right or else worg otherwise.</p>
+
+	<input id="input-text-2" type="text" placeholder="what was your secret name?">
+	<button id="submit-button-2">submit</button>
+
+
+
+	<script type="text/javascript">
+
+
+		// for challenge one
+		document.getElementById("submit-button").onclick = function() {
+
+			var textEntered = "";
+
+			textEntered= document.getElementById("input-text").value;
+
+
+			// conditional statement
+
+			if (textEntered == 'abracadabra'){
+				alert("You've got it right!");
+			}else {
+				alert("Try again");
+			}
+		}
+
+
+		// for challenge two
+
+		document.getElementById("submit-button-2").onclick = function(){
+
+			var secret_name ="alibaba";
+			var user_name = document.getElementById("input-text-2").value;
+
+			if (user_name == secret_name){
+				alert("Correct input")
+			} else {
+				alert("Wrong input")
+			}
+		}
+
+
 
 	</script>
 
