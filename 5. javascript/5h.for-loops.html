@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>for loops</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+
+       #this_{
+        font-size: 50px;
+        font-family: 'Monofett', cursive;
+        font-weight: normal;
+       }
+
+    </style>
+</head>
+<body>
+
+
+	<h2>For loops</h2>
+	<hr>
+
+    <div id="tweets_div"></div>
+
+	<script type="text/javascript">
+
+        var my_tweets = ["Hi everyone!", "I love corn-bread!", "Night Night!","Sweet dreams!"];
+
+        var tweet_string = "";
+
+        for (var i =0 ; i < my_tweets.length ; i++) {
+
+            //alert(my_tweets[i])
+            tweet_string = tweet_string + "<h3 id='this_'>" + my_tweets[i] + "</h3>";
+        }
+        // write paragraphs inside the div
+
+        document.getElementById("tweets_div").innerHTML = tweet_string;
+	</script>
+
+</body>
+</html>

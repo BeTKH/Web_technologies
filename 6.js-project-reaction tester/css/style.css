@@ -1,0 +1,27 @@
+         #shape{
+            width: 200px;
+            height: 200px;
+            display: none;
+            position: relative;
+        }
+
+        body{
+            font-family: sans-serif;
+        }
+
+        #your-time{
+            color: red;
+            font-weight: bold;
+
+        }
+
+        #best-time{
+            color: green;
+            font-weight: bold;
+
+        }
+
+        #avg-time{
+            color: blue;
+            font-weight: bold;
+        }
