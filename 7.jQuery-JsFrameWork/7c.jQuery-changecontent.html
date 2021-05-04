@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery-DetectClick</title>
+
+   <!-- external jquery
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   -->
+
+   <script type="text/javascript" src="jquery360.js"></script>
+
+   <style type="text/css">
+
+      #circle_{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: green;
+        margin: 40px;
+      }
+
+
+   </style>
+
+</head>
+<body>
+
+    <h2>Selecting Elements in jQuery</h2>
+    <hr>
+
+    <div>
+
+      <div id="circle_"></div>
+      <div class="squares_"></div>
+      <div class="squares_"></div>
+
+    </div>
+      <h3>Click on the circle to change the text!</h3>
+      <p id="para_g">This is some text.</p>
+
+      <a>Another random text in the link</a>
+
+      <h1 >iFrame</h1>
+      <p>Hover over the circle to change the content and size of the iframe</p>
+      <hr>
+
+      <iframe id="frame" src="https://www.codestars.com/"></iframe>
+
+
+      <script type="text/javascript">
+
+          $("#circle_").hover(function() {
+
+            // conventional js
+           // document.getElementById("#para_g").innerHTML = "Now this text has been changed!";
+
+            //in jQuery changing inner html
+            $("#para_g").html("Now this text has been changed!");
+            //alert("Circle clicked");
+
+            //grabbing conents of innerHTML
+
+            //alert($("#para_g").html());
+             alert($("a").html());
+
+
+
+          })
+
+
+
+
+
+
+      </script>
+
+
+
+</body>
+</html>

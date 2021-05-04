@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery-DetectClick</title>
+
+   <!-- external jquery
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   -->
+
+   <script type="text/javascript" src="jquery360.js"></script>
+
+   <style type="text/css">
+
+      #circle_{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: green;
+        float: left;
+        margin: 40px;
+      }
+
+      .squares_{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        float: left;
+        margin: 40px;
+      }
+
+   </style>
+
+</head>
+<body>
+
+    <h2>Selecting Elements in jQuery</h2>
+    <hr>
+
+    <div>
+
+      <div id="circle_"></div>
+      <div class="squares_"></div>
+      <div class="squares_"></div>
+
+    </div>
+
+
+      <p>$("#id_name")   selects id</p>
+      <p>$(".class_name") selects class</p>
+      <p>$("div")  selects div</p>
+      <script type="text/javascript">
+
+          $("#circle_").click(function() {
+            alert("Circle clicked");
+          })
+
+          $(".squares_").click(function(){
+            alert("Squares clicked!")
+          })
+
+      </script>
+
+
+
+</body>
+</html>
