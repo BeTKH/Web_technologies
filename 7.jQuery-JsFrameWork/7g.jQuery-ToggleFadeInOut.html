@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery-Fading</title>
+
+   <!-- external jquery
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   -->
+
+   <script type="text/javascript" src="jquery360.js"></script>
+
+
+</head>
+<body>
+    <p id="text_io">Challenge 4- Fade in or out with toggle button</p>
+    <button id="toggle_">TOGGLE</button>
+
+
+    <script type="text/javascript">
+
+          // on click fadout/In h4 text
+
+          // METHOD-1 ********************************************************************
+          // $("#toggle_").click(function(){
+          //   if ($("#text_io").css("display") == 'none'){
+          //       $("#text_io").fadeIn();
+          //   }else {
+          //     $("p").fadeOut();
+          //   }
+          // });
+
+          // METHOD-2 ********************************************************************
+
+          var textShowing = true
+           $("#toggle_").click(function(){
+            ;
+            if (textShowing){
+                $("#text_io").fadeOut(function(){
+                    textShowing = false;
+                });
+            }else {
+              $("#text_io").fadeIn(function(){
+                  textShowing = true;
+              });
+            }
+          });
+    </script>
+
+</body>
+</html>
