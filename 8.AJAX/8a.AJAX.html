@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajax</title>
+</head>
+<body>
+    <h2>Why AJAX?</h2>
+    <hr>
+
+    <ul>
+        <li>Provides simple interactivity to web-Apps <b>with out</b> refreshing the page!</li>
+        <li>powerful technology for intercativity.. used in FB, Google, etc..</li>
+        <li>AJAX provides more powerful intercativity</li>
+    </ul>
+
+    <script type="text/javascript">
+
+        // using jQuery
+        $.get("info.text", function (data) {
+            alert(data);
+        });
+        /*
+            the problem is what if this jQuery function fails ?
+            what if the .get respnse isn't successful?
+
+            This is where ajax is useful! Provides more elaborae enteractivity.
+
+        */
+
+        // using AJAX
+
+        $.ajax("info.txt")
+                .done(function(data) {
+
+                $("p").html(data);
+
+                })
+                .fail(function() {
+
+                alert("Could not get data");
+
+                });
+
+
+
+
+    </script>
+
+
+</body>
+</html>
