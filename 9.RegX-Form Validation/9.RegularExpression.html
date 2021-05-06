@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegX</title>
+
+    <style type="text/css">
+
+        #syntax_{
+            font-style: italic;
+            font-weight: bold;
+            border-style: ridge;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>What Is a Regular Expression?</h2>
+    <hr>
+
+    <p>A regular expression is a sequence of characters that forms a search pattern.</p>
+    <p>Syntax</p>
+    <p id="syntax_">/pattern/modifiers;</p>
+
+    <h2>Why RegX?</h2>
+    <hr>
+
+    <ul>
+        <li>Typically used to check the content of a string!</li>
+        <li>To check if the user enters some undesirable characters</li>
+        <li>To validate the user input</li>
+    </ul>
+
+    <script type="text/javascript">
+
+            var regex = /e/g;  // regx formula
+
+            var string = "Regex is great!";
+
+            var result = string.match(regex);
+
+            //alert(result);
+
+        </script>
+
+</body>
+</html>
