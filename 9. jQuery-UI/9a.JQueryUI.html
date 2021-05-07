@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQueryUI</title>
+
+      <link rel="stylesheet" href="jqueryUI/jquery-ui.min.css">
+      <script src="jqueryUI/external/jquery/jquery.js"></script>
+      <script src="jqueryUI/jquery-ui.min.js"></script>
+
+    <style type="text/css">
+
+        #draggable {
+            width: 150px;
+            height: 150px;
+            padding: 0.5em; }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>jQuery - Draggable<a href="https://jqueryui.com/"  target="_blank">UI</a> </h1>
+    <hr>
+
+    <div id="draggable" class="ui-widget-content">
+
+        <p>Drag me!</p>
+
+    </div>
+
+    <script type="text/javascript">
+        $( function() {
+                $( "#draggable" ).draggable();
+            } );
+    </script>
+
+
+</body>
+</html>
