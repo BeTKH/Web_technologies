@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQueryUI</title>
+
+      <link rel="stylesheet" href="jqueryUI/jquery-ui.min.css">
+      <link rel="stylesheet" href="jqueryUI/jquery-ui.css">
+      <script src="jqueryUI/external/jquery/jquery.js"></script>
+      <script src="jqueryUI/jquery-ui.min.js"></script>
+
+      <!--INCLUDE FONT-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+
+        body{
+            font-family: 'Noto Serif', serif;
+        }
+
+        #draggable {
+            width: 100px;
+            height: 100px;
+            padding: 0.5em;
+            float: left;
+            background-color: #CC99FF;
+            font-weight: bold;
+            color: white;
+            border-radius: 50%;
+            margin: 10px 10px 10px 0; }
+
+        #droppable {
+            width: 250px;
+            height: 250px;
+            padding: 0.5em;
+            float: left;
+            margin: 10px;
+            border-radius: 50px;}
+
+        #text_{
+            margin: 50px 10px 20px 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>jQuery - Droppable  <a href="https://jqueryui.com/"  target="_blank">UI</a> </h1>
+    <hr>
+
+    <script type="text/javascript">
+        $( function() {
+
+            $( "#draggable" ).draggable(); // make the circular object div draggable
+
+            $( "#droppable" ).droppable({  // make the box droppable and specify further what happens up on the drop event!
+                drop: function( event, ui ) {
+                $( this )
+                    .addClass( "ui-state-highlight" )
+                    .find( "p" )
+                    .html( "Dropped!" );
+                 }
+             });
+         } );
+    </script>
+
+    <div id="draggable" class="ui-widget-content">
+      <p>Drag me into the box</p>
+    </div>
+
+    <div id="droppable" class="ui-widget-header">
+      <p>Drop here</p>
+    </div>
+
+</body>
+</html>
