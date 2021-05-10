@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQueryUI-Draggable -Constrain movement</title>
+
+      <link rel="stylesheet" href="jqueryUI/jquery-ui.min.css">
+      <script src="jqueryUI/external/jquery/jquery.js"></script>
+      <script src="jqueryUI/jquery-ui.min.js"></script>
+
+      <!--INCLUDE FONT-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+
+        body{
+            font-family: 'Noto Serif', serif;
+        }
+
+        #draggable {
+
+            color: white;
+            cursor: n-resize;
+            font-size: 180%;
+            width: 250px;
+            height: 150px;
+            background-color: #CC99FF;
+            border-radius: 45px;
+            font-weight: bold;
+            padding: 0.5em;
+        }
+
+        #draggable3{
+            width: 150px;
+            height: 80px;
+            background-color: blue;
+            color: white;
+            padding: 15px;
+        }
+
+        #text_{
+            margin: 50px 10px 20px 50px;
+        }
+
+        #container-box{
+            width: 500px;
+            height:150px;
+            border:2px solid #ccc;
+            padding: 10px;
+            background-color: yellow;}
+
+        #containment-wrapper { width: 95%; height:150px; border:2px solid #ccc; padding: 10px; }
+    </style>
+
+</head>
+<body>
+
+    <h1>jQuery - Draggable  <a href="https://jqueryui.com/"  target="_blank">UI</a> </h1>
+
+    <h3>Draggable Box</h3>
+    <hr>
+    <div id="draggable" class="draggable ui-widget-content">
+
+            <div id="text_">Drag me!</div>
+
+    </div>
+
+    <h3>Containment Parent</h3>
+    <hr>
+
+    <div id="container-box">
+        <span>I'm stuck in the Box!</span>
+    </div>
+
+
+    <h3>Containment Wrapper</h3>
+    <hr>
+
+    <div id="containment-wrapper">
+
+          <div id="draggable3" class="draggable ui-widget-content">
+
+            <p>I&apos;m contained within the box</p>
+
+          </div>
+
+    </div>
+
+    <h2>API <a href="Documentation">Documentation</a></h2>
+
+    <script type="text/javascript">
+
+        $( function() {
+            $( "#draggable" ).draggable({ axis: "x" });
+            $("span").draggable({containment: 'parent'});
+            $( "#draggable3" ).draggable({ containment: "#containment-wrapper", scroll: false });
+          } );
+
+    </script>
+
+
+</body>
+</html>

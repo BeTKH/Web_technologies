@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQueryUI-ReSizable</title>
+
+      <link rel="stylesheet" href="jqueryUI/jquery-ui.min.css">
+      <script src="jqueryUI/external/jquery/jquery.js"></script>
+      <script src="jqueryUI/jquery-ui.min.js"></script>
+
+      <!--INCLUDE FONT-->
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+
+        #resizable {
+            width: 150px;
+            height: 150px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            padding: 0.5em; }
+
+        #resizable h3 {
+            background-color: #0099CC;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            margin: 0; }
+
+        #also {
+
+                width: 100px;
+                height: 100px;
+                background-color: red;
+
+            }
+
+   </style>
+
+</head>
+<body>
+
+    <h1>jQuery - Resizable  <a href="https://jqueryui.com/"  target="_blank">UI</a> </h1>
+
+    <div id="resizable">
+
+      <h3 >Resizable</h3>
+
+    </div>
+
+    <hr>
+
+    <h1>also - resize multiple objects simultaneously</h1>
+
+    <script type="text/javascript">
+
+        $( function() {
+            $( "#resizable" ).resizable();
+          } );
+
+    </script>
+
+
+</body>
+</html>
