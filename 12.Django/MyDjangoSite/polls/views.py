@@ -7,4 +7,4 @@ from django.http import HttpResponse
 
 
 def indexPolls(request):
-    return HttpResponse(" <h1>Hello Django! </h1> <br>You're at the <u>polls index</u>.")
+    return HttpResponse(" <h2>Hello Django! </h2> <br>You're at the <u>polls index</u>.")
