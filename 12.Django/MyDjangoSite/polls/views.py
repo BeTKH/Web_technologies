@@ -7,4 +7,27 @@ from django.http import HttpResponse
 
 
 def indexPolls(request):
-    return render(request, "home.html", {"name":"Navin"})
+
+    
+    return render(request, "home.html", {"name":"BUddy"})
+
+
+def add(request):
+
+    num1 = int(request.GET["number1"])
+    num2 = int(request.GET["number2"])
+
+    rez = num1 + num2
+
+    return render(request, "result.html", {"sum":rez})
+
+
+
+
+
+
+    
+
+    
+
+    

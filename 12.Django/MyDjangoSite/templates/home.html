@@ -2,8 +2,14 @@
 
 {% block content  %}
 
-<h3>Get your details {{name}}!</h3>
-<h4>Get your details {{name}}!</h4>
-<h5>Get your details {{name}}!</h5>
+<h4>Add the numbers {{name}}!</h4>
+
+<form action="add">
+
+    N1 : <input type="text", name="number1"><br>
+    N2 : <input type="text", name="number2"><br>
+    <br>
+    <input type="submit">
+</form>
 
 {% endblock %}
