@@ -17,7 +17,7 @@ def add(request):
     num1 = int(request.GET["number1"])
     num2 = int(request.GET["number2"])
 
-    rez = num1 + num2
+    rez = num1 * num2
 
     return render(request, "result.html", {"sum":rez})
 
