@@ -1,3 +1,7 @@
+from time import sleep
+from typing_extensions import Self
+
+
 class myClass:
     x = 5
 
@@ -6,9 +10,13 @@ ob1 = myClass()
 #print(ob1.x)
 
 
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# OBJECT PROPERTIES/ATTRIBUTES 
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 # how do we initialize object properties ? 
-# using __init__()
+# using __init__() : assign values to object properties
 
 
 class Person:
@@ -24,12 +32,54 @@ class Person:
 
 p1 = Person('Abebe', 28, 'Albert Einstein Str.')
 
-print(p1.name)
-print(p1.age)
-print(p1.street)
+print(p1.name, p1.age, p1.street)
 
 
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# OBJECT BEHAVIORS -- OBTECT METHODS() 
+# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
+class Person_two:
 
-    
+
+    # initialize object properties
+
+    def __init__(self, name, age, street=None, dept=None):   #name and age are mandatory fields, street and dept are optional fileds ---could be none as well
+
+        # class attributes / properties
+        self.name = name 
+        self.age = age
+        self.street = street
+        self.dept = dept
+
+    # initialize object behaviors --- using methods 
+
+    def eat(self, diet_type=None, freqnecy = None):
+        self.diet_type = diet_type
+        self.freqnecy = freqnecy
+
+
+    def sleep(self, bed=None, pillow=None, blanket=None, duration=None):
+        self.bed = bed
+        self.pillow = pillow
+        self.blanket = blanket
+        self.duration = duration
+
+    def run(self, distance, pace, route):
+        self.distance = distance
+        self.pace = pace
+        self.route = route 
+
+
+    def Program(self, platform, language):
+        self.platform = platform
+        self.language = language
+
+
+p1 = Person('Abebe', 28, 'Albert Einstein Str.')
+print(p1.name, p1.age, p1.street, '\n')
+
+
+p2 = Person_two('Jasmin', '22')
+print(p2.age, p2.name)
