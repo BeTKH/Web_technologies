@@ -1,0 +1,35 @@
+class myClass:
+    x = 5
+
+
+ob1 = myClass()
+#print(ob1.x)
+
+
+
+# how do we initialize object properties ? 
+# using __init__()
+
+
+class Person:
+
+    def __init__(self, name, age, street=None, dept=None):   #name and age are mandatory fields, street and dept are optional fileds ---could be none as well
+
+        # class attributes / properties
+        self.name = name 
+        self.age = age
+        self.street = street
+        self.dept = dept
+
+
+p1 = Person('Abebe', 28, 'Albert Einstein Str.')
+
+print(p1.name)
+print(p1.age)
+print(p1.street)
+
+
+
+
+
+    
