@@ -15,8 +15,6 @@ ob1 = myClass()
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-
-
 # how do we initialize object properties ? 
 # using __init__() : assign values to object properties
 
@@ -35,8 +33,6 @@ class Person:
 p1 = Person('Abebe', 28, 'Albert Einstein Str.')
 
 print(p1.name, p1.age, p1.street)
-
-
 
 
 # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
