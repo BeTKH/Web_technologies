@@ -82,4 +82,4 @@ print(p1.name, p1.age, p1.street, '\n')
 
 
 p2 = Person_two('Jasmin', '22')
-print(p2.age, p2.name, p2.eat())
+print(p2.age, p2.name)
