@@ -80,11 +80,6 @@ class Person_two:
         self.platform = platform
         self.language = language
 
-    
-
-
-        
-
 
 p1 = Person('Abebe', 28, 'Albert Einstein Str.')
 print(p1.name, p1.age, p1.street, '\n')
