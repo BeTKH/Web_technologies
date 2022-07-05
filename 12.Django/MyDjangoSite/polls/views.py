@@ -14,8 +14,8 @@ def indexPolls(request):
 
 def add(request):
 
-    num1 = int(request.GET["number1"])
-    num2 = int(request.GET["number2"])
+    num1 = float(request.GET["number1"])
+    num2 = float(request.GET["number2"])
 
     rez = num1 / num2
 
