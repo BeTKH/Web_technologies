@@ -7,6 +7,7 @@ from django.http import HttpResponse
 
 # a view function : - takes a request and returns response 
 #                   - it is request handler
+#                   - examples of requests: #pull data from DB, # transform data, # send e-mail 
 
 def say_hello(request):
-    return HttpResponse('Hello World!')
+   return render(request, 'hello.html', {'name':'Beck'})
