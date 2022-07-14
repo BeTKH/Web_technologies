@@ -10,4 +10,4 @@ from django.http import HttpResponse
 #                   - examples of requests: #pull data from DB, # transform data, # send e-mail 
 
 def say_hello(request):
-   return render(request, 'hello.html', {'name':'Beck', 'age':28})
+   return render(request, 'hello.html', {'name':'김정은', 'page':1})
